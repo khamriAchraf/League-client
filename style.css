@@ -1,0 +1,285 @@
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #CBBC8F;
+    padding: 10px;
+}
+
+.main {
+    background-image: url('img/client-bg.jpg');
+    background-size: cover;
+}
+
+.social {
+    background-color: #010A13;
+}
+
+.al-center {
+    align-content: center;
+}
+
+/************************************* Main Nav **************************************/
+
+
+.navbar {
+    padding: 0rem 1rem;
+}
+
+.main-nav  {
+    background: linear-gradient(rgba(0,0,0,0.5) 80%, transparent 100%);
+}
+
+.navbar-nav {
+    height: 100%;
+}
+
+.nav-item {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.main-nav .navbar-nav .active {
+    color: white;
+    background: rgb(156, 119, 49);
+    background: linear-gradient(0deg, rgba(158, 131, 82, 0.3) 0%, rgba(0, 0, 0, 0.07886904761904767) 50%);
+
+}
+
+.navbar-nav .active .nav-link {
+    color: white;
+}
+
+.currencies {
+    border-left: 2px solid white;
+    border-image: radial-gradient(circle, rgba(156, 119, 49, 1) 50%, rgba(0, 0, 0, 0.07886904761904767) 100%);
+    border-image-slice: 1;
+    text-align: end;
+}
+
+
+/********************************** Home Nav *************************************/
+
+.home-nav {
+    border-top: 1px solid white;
+}
+
+
+.home-nav .nav-item {
+    height: 30px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.home-nav .nav-item .nav-link {
+    padding-bottom: 5px;
+}
+
+
+.home-nav .navbar-nav.mr-auto {
+    width: 700px;
+}
+
+.home-nav .navbar-nav .active {
+    color: white;
+    border-bottom: 2px solid white;
+    border-image: radial-gradient(circle, white 50%, rgba(0, 0, 0, 0.07886904761904767) 100%);
+    border-image-slice: 1;
+
+}
+
+.navbar-nav .nav-item a:hover {
+    color: white;
+}
+
+.btn-main {
+    position: relative;
+    bottom: 5px;
+    background: #1E2328;
+    color: #ABA07C;
+    font-size: 12px;
+    border-image: radial-gradient(#9E8C62 50%, #68522B 100%);
+    border-image-slice: 1;
+    border-radius: 0;
+    padding: 6px 18px;
+    -webkit-box-shadow: inset 0px 0px 8px 0px #000000;
+    box-shadow: inset 0px 0px 8px 0px #000000;
+}
+
+.btn-main:hover {
+    
+}
+
+
+/****************************        Article       ********************************************/
+
+.tagline {
+    color: white;
+}
+
+.tagline h1{
+    font-size: 30px;
+}
+
+.tagline p {
+    color: #6B685F;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 8px;
+}
+
+.tagline h5 {
+    color: #999;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.video {
+    height: 350px;
+}
+
+
+
+/********************************* links *********************************/
+
+.imgfluid {
+    height: 100px;
+    width: auto;
+    border: 1px solid #121820;
+    padding: 0;
+}
+
+.champion {
+    height: 126.422px;
+}
+
+.links h3 {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #999;
+}
+
+
+/********************************** Social Panel **************************************/
+
+.sum-name {
+    align-items: center;
+    height: 80px;
+    
+}
+
+.sum-name img {
+    border-radius: 100%;
+    border: 3px solid #156B71;
+}
+
+.sum-name h2 {
+    font-size: 12px;
+    color: #D5CEBC;
+    font-weight: 700;
+}
+
+.sum-name p {
+    font-size: 11px;
+    color: #0AA747;
+}
+
+.sname {
+    position: relative;
+    top: 10px;
+}
+
+.fa-bell {
+    color: #5C5B57;
+    position: relative;
+    top: 15px;
+}
+
+.social .toolbar {
+    font-size: 13px;
+    color: #C7A96D;
+    border-top: 1px solid white;
+}
+
+.toolbar h3 {
+    font-size: 14px;
+    color: #8D897C;
+}
+
+/*************************** FRIENDS ******************************/
+
+.accord-header {
+    color: #8A877A;
+    background-color: #041019;
+}
+
+.accord-header .fas {
+    font-size: 11px;
+}
+
+.accord-header h4 {
+    
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.friend-name {
+    align-items: center;
+    height: 50px;
+    padding-top: 2px !important;
+    padding-bottom :0 !important;
+}
+
+.friend-name:hover {
+    background-color: #0F161E;
+}
+
+.friend-name {
+    font-weight: normal !important;
+}
+
+.friend-name img {
+    border:2px solid #896B2E;
+    
+}
+
+.open-party {
+    border-left: 4px solid #4BB44B;
+}
+
+.join {
+    padding: 7px;
+    border-radius: 100%;
+    text-align: center;
+    position: relative;
+    top: 1px;
+    visibility: hidden;
+}
+
+.join-visible {
+    visibility: visible !important;
+}
+
+.btn-bottom {
+    padding: 10px;
+}
+
+.bottom-button {
+    position: fixed !important;
+    bottom: 0px !important;
+}
+
+.fas-bug {
+    float: right;
+}
