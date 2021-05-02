@@ -1,128 +1,195 @@
 html,
 body {
-    overflow: hidden;
-    border-top: 1px solid #785A28;
+  overflow: hidden;
+  border-top: 1px solid #785A28;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none !important;
 }
 
 /* Style the video: 100% width and height to cover the entire window */
 .main {
-    overflow: hidden;
-    
+  overflow: hidden;
+
+}
+
+
+.btn-main {
+  position: relative;
+  bottom: 5px;
+  background: #1E2328;
+  color: #ABA07C;
+  font-size: 12px;
+  border-image: radial-gradient(#9E8C62 50%, #68522B 100%);
+  border-image-slice: 1;
+  border-radius: 0;
+  padding: 6px 18px;
+  width: 100%;
+  -webkit-box-shadow: inset 0px 0px 8px 0px #000000;
+  box-shadow: inset 0px 0px 8px 0px #000000;
+}
+
+.btn-main:hover {
+  color: #ABA07C;;
 }
 
 .main-noVideo {
-    background: url('img/login-bg.jpg');
-    background-size: cover;
+  background: url('img/login-bg.jpg');
+  background-size: cover;
 }
 
 #myVideo {
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
 }
 
 
 /* Add some content at the bottom of the video/page */
 .content {
-    position: fixed;
-    bottom: 0;
-    background: linear-gradient(transparent, black);
-    color: #f1f1f1;
-    padding: 20px;
-    width: 80%;
+  position: fixed;
+  bottom: 0;
+  background: linear-gradient(transparent, black);
+  color: #f1f1f1;
+  padding: 20px;
+  width: 80%;
 }
 
 .social {
-    background-color: #010A13;
-    height: 100vh !important;
+  background-color: #010A13;
+  height: 100vh !important;
 }
 
 .riot-logo {
-    filter: brightness(100);
-    height: 35px;
-    width: auto;
+  filter: brightness(100);
+  height: 35px;
+  width: auto;
 }
 
 .login-control {
-    font-size: 15px;
-    padding-left: 10px;
-    border-left: 3px solid white;
-    border-image: radial-gradient(circle, #664E29 50%, rgba(0, 0, 0, 0.07886904761904767) 100%);
-    border-image-slice: 1;
+  font-size: 15px;
+  padding-left: 10px;
+  border-left: 3px solid white;
+  border-image: radial-gradient(circle, #664E29 50%, rgba(0, 0, 0, 0.07886904761904767) 100%);
+  border-image-slice: 1;
 }
 
 input[type=checkbox] {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 
 
 .container {
-    display: block;
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 12px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    color: #ccc;
-  }
-  
-  /* Hide the browser's default checkbox */
-  .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  /* Create a custom checkbox */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 15px;
-    width: 15px;
-    background-color: #141727;
-    border: 1px solid red;
-    border-image: radial-gradient(#9E8C62 50%, #68522B 100%);
-    border-image-slice: 1;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark {
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .container input:checked ~ .checkmark {
-    
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .container .checkmark:after {
-    left: 4px;
-    top: 1px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ccc;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #141727;
+  border: 1px solid red;
+  border-image: radial-gradient(#9E8C62 50%, #68522B 100%);
+  border-image-slice: 1;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked~.checkmark {}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/*************************** Social **************************************/
+
+.social h2 {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+label {
+  color: #ccc;
+  font-size: 12px;
+}
+
+input {
+  background-color: #000306 !important;
+  border: 1px solid #54401D !important;
+  height: 30px !important;
+  border-radius: 0 !important;
+}
+
+input:focus {
+  background-color: #101920 !important;
+  border-image: radial-gradient(#64583D , #785A28);
+  border-image-slice: 1;
+  outline: 0;
+}
+
+
+.social a {
+  font-size: 12px;
+}
+
+.version {
+  border-top: 1px solid;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+}

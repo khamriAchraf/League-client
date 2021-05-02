@@ -1,6 +1,6 @@
 html,
 body {
-    height: 100vh;
+    height: 100vh !important;
     overflow: hidden;
     font-weight: bold;
     border-top: 1px solid #785A28;
@@ -12,8 +12,9 @@ body {
 }
 
 .main {
-    background-image: url('img/ricardo.jpg');
+    background-image: url('img/client-bg.jpg');
     background-size: cover;
+    height: 100vh;
 }
 
 .social {
@@ -183,6 +184,7 @@ body {
 .sum-name img {
     border-radius: 100%;
     border: 3px solid #156B71;
+    width: 60px;
 }
 
 .sum-name h2 {

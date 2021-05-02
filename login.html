@@ -30,7 +30,7 @@
                     </div>
                     <div class="login-control mt-3">
                         <label class="container">Disable Login Animations
-                            <input onclick="myOtherFunction()" type="checkbox" id="stopVideo">
+                            <input onclick="myOtherFunction(); myFunction();" type="checkbox" id="stopVideo">
                             <span class="checkmark"></span>
                           </label>
                           <label class="container">Disable Login Audio
@@ -64,10 +64,38 @@
 
 
 
-        <div class="col-lg-2 social p-0">
+        <div class="col-lg-2 social">
 
-            main
-
+            <div class="row pr-5 pl-5 pt-5 pb-3">
+                <img class="img-fluid" src="img/lol-logo.png" alt="">
+            </div>
+            <div class="row m-0 p-2">
+                <h2>SIGN IN</h2>
+            </div>
+            <div class="row m-0 p-2">
+                <form id="login-form">
+                    <div class="form-group mb-1">
+                      <label for="exampleInputEmail1" class="mb-0">Username</label>
+                      <input type="username" class="form-control shadow-none" id="username" aria-describedby="" placeholder="">
+                      </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1" class="mb-0">Password</label>
+                      <input type="password" class="form-control shadow-none" id="password" placeholder="">
+                    </div>
+                    <label class="container">Remember Me
+                        <input type="checkbox" id="stopVideo">
+                        <span class="checkmark"></span>
+                      </label>
+                      <div class="bottom">
+                    <button href="index.html" type="" onclick="submit();" class="btn btn-main mb-2 shadow-none">SIGN IN</button>
+                    <button type="" class="btn btn-main shadow-none">CREATE ACCOUNT</button>
+                    <a href="">Forgot your username?</a><br>
+                    <a href="">Forgot your password?</a>
+                    <div class="version mt-3">
+                       <p class="mb-1"> V 8.18</p>
+                    </div></div>
+                  </form>
+            </div>
         </div>
 
     </div>
